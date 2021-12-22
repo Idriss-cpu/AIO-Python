@@ -7,3 +7,9 @@ unite_price = 26.99
 extended_price = quantity * unite_price
 # Show the results
 print(extended_price)
+x = -4
+y = abs(x)
+print(x)
+print(y)
+print(round(extended_price, 3))
+print(bin(y))
