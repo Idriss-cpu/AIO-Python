@@ -1,16 +1,16 @@
 # This is a Python comment in my first Python app.
 # This variable contains an integer
-quantity = 14
+QUANTITY = 14
 # This variable contains a float
-unite_price = 26.99
+UNITE_PRICE = 26.99
 # This variable contains the result of multiplying quantity times unit price
-extended_price = quantity * unite_price
+EXTENDED_PRICE = QUANTITY * UNITE_PRICE
 # Show the results
-print(extended_price)
-x = -4
-y = abs(x)
-print(x)
-print(y)
-print(round(extended_price, 3))
-print(bin(y))
+print(EXTENDED_PRICE)
+X = -4
+Y = abs(X)
+print(X)
+print(Y)
+print(round(EXTENDED_PRICE, 3))
+print(bin(Y))
 # Test line
