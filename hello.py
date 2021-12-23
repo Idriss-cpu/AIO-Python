@@ -1,4 +1,4 @@
-# This is a Python comment in my first Python app.
+# This is a Python comment in my first Python app
 # This variable contains an integer
 QUANTITY = 14
 # This variable contains a float
