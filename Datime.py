@@ -1,7 +1,9 @@
 # Works with dates and times
 # Importation of the datetime module
 # Works with date
+# import dateutil tz
 import datetime as dt
+from dateutil.tz import gettz
 print(dt.date.today())
 # Store some other date in a variable
 LAST_OF_TEENS = dt.date(2019, 12, 31)
@@ -33,3 +35,25 @@ print(new_years_day + duration)
 memorial_day = dt.date(2019, 5, 27)
 duration = dt.timedelta(days=146)
 print(memorial_day - duration)
+# Working with time zones
+here_now = dt.datetime.now()
+utc_now = dt.datetime.utcnow()
+time_difference = utc_now - here_now
+print(f"My time    : {here_now:%I:%M:%p}")
+print(f"UTC time   : {utc_now:%I:%M:%p} ")
+print(f"Differnrce : {time_difference}")
+event = dt.datetime(2020, 7, 4, 19, 0, 0)
+# UTC time right now.
+utc = dt.datetime.now(gettz('Etc/UTC'))
+print(f"{utc:%A %D %I:%M %p %Z}")
+# USA Estern time.
+est = dt.datetime.now(gettz('America/New_York'))
+print(f"{est:%A %D %I:%M %p %Z}")
+# USA Central time.
+cst = dt.datetime.now(gettz('America/Chicago'))
+print(f"{cst:%A %D %I:%M %p %Z}")
+# USA Mountain time.
+mst = dt.datetime.now(gettz('America/Boise'))
+print(f"{mst:%A %D %I:%M %p %Z}")
+pst = dt.datetime.now(gettz('America/Los_Angeles'))
+print(f"{pst:%A %D %I:%M %p %Z}")
