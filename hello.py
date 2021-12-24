@@ -54,5 +54,3 @@ print(S1.title())
 print(S1.upper())
 print(S2)
 print("**** Dates and Times ***")
-# Dates and Times
-
