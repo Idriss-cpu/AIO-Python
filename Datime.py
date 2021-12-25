@@ -1,8 +1,8 @@
+import datetime as dt
 # Works with dates and times
 # Importation of the datetime module
 # Works with date
 # import dateutil tz
-import datetime as dt
 from dateutil.tz import gettz
 print(dt.date.today())
 # Store some other date in a variable
@@ -57,3 +57,15 @@ mst = dt.datetime.now(gettz('America/Boise'))
 print(f"{mst:%A %D %I:%M %p %Z}")
 pst = dt.datetime.now(gettz('America/Los_Angeles'))
 print(f"{pst:%A %D %I:%M %p %Z}")
+# Show Local date and time.
+print("local: " + f"{event: %D %I %M %p}" + "\n")
+event_eastern = event.astimezone(gettz("America/New_York"))
+print(f"{event_eastern:%D %I %M %p %Z}")
+event_central = event.astimezone(gettz("America/Chicago"))
+print(f"{event_central:%D %I %M %p %Z}")
+event_mountain = event.astimezone(gettz("America/Denver"))
+print(f"{event_mountain:%D %I %M %p %Z}")
+event_pacific = event.astimezone(gettz("America/Los_Angeles"))
+print(f"{event_pacific:%D %I %M %p %Z}")
+event_utc = event.astimezone(gettz("Etc/UTC"))
+print(f"{event_utc:%D %I %M %p %Z}")
