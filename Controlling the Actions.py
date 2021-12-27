@@ -1,4 +1,6 @@
+import random
 import datetime as dt
+# from typing import Counter
 # Controlling the Actions.
 sun = "down"
 if sun == "down":
@@ -85,4 +87,39 @@ for outer in ["First", "Second", "Thid"]:
         print(inner + 1)
 print("Both loops are done")
 # Out of both loops
+print("\n")
+# Looping with while.
+counter = 65
+while counter < 91:
+    print(str(counter) + " = " + chr(counter))
+    counter += 1
+print("All done")
+print("\n")
+# while and continue.
+print("Odd numbers")
+counter = 0
+while counter < 10:
+    # Get a random number
+    number = random.randint(1, 999)
+    if int(number/2) == number/2:
+        # If it's an even number, don't print it
+        continue
+    # Otherwise, if it's odd, print it and increment the counter.
+    print(number)
+    counter += 1
+print("Loop is done")
+print("\n")
+# while and break.
+print("Numbers that areb't evenly divisible by five")
+counter = 0
+while counter < 10:
+    # Get a random number
+    number = random.randint(1, 999)
+    if int(number/5) == number/5:
+        # if it's evenly divisible by 5, bail out.
+        break
+    # Otherwise, print it and keep going for a while.
+    print(number)
+    counter += 1
+print("Loop is done")
 print("\n")
