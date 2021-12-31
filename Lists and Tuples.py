@@ -27,3 +27,21 @@ students.insert(0, student_name)
 # Show me the new list.
 print(students)
 print("\n")
+# Changing an item in a list.
+students[3] = "Hobart"
+print(students)
+print("\n")
+# Combining lists.
+# Create two lists of names.
+list1 = ["Zara", "Lupe", "Hong", "Alberto", "jake"]
+list2 = ["Huey", "Dewey", "Louie", "Nader", "Bubba"]
+# Add list2 names to list1.
+list1.extend(list2)
+print(list1)
+print("\n")
+# Removing list items.
+letters = ["A", "B", "C", "D", "C", "E", "C"]
+# Remove "C" from the list.
+letters.remove("C")
+print(letters)
+print("\n")
