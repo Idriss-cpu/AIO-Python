@@ -45,3 +45,36 @@ letters = ["A", "B", "C", "D", "C", "E", "C"]
 letters.remove("C")
 print(letters)
 print("\n")
+# Remove itmes with pop().
+# Make a Copy of first list item then remove it from list.
+first_rmoved = letters.pop(0)
+# Make a Copy of last list item then remove it from list.
+last_removed = letters.pop()
+# Show the new list.
+print(letters)
+# Show what's been removed.
+print(first_rmoved + " and " + last_removed + " were removed from the list.")
+print("\n")
+# Counting how many times an item appears in a list.
+# Create a list of strings.
+grades = ["C", "B", "A", "D", "C", "B", "C"]
+# Count the B's.
+b_grads = grades.count("B")
+# Use a variable for value to count.
+look_for = "C"
+c_grades = grades.count(look_for)
+print("There are " + str(b_grads) + " B grades in the list.")
+print("There are " + str(c_grades) + " " + look_for + " grades in the list.")
+# Count F's too.
+print("There are " + str(grades.count("F")) + " F grades in the list.")
+print("\n")
+# Find the index for B.
+b_index = grades.index("B")
+# Find the index for F.
+look_for = "F"
+f_index = grades.index(look_for)
+# Show the results.
+print("The first B is index " + str(b_index))
+print("\n")
+print("The first " + look_for + " is at " + str(f_index))
+print("\n")
