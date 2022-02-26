@@ -1,4 +1,7 @@
 # Working with lists & tuples.
+from tkinter.font import names
+
+
 students = ["Mark", "Amber", "Todd", "Anita", "Sandy"]
 # Is Anita in the list ?
 has_anita = "Anita" in students
@@ -72,9 +75,29 @@ print("\n")
 b_index = grades.index("B")
 # Find the index for F.
 look_for = "F"
-f_index = grades.index(look_for)
+
 # Show the results.
 print("The first B is index " + str(b_index))
 print("\n")
-print("The first " + look_for + " is at " + str(f_index))
+
 print("\n")
+# See if the item is in the list.
+if look_for in grades:
+    # If it's in the list, get and show the index.
+    print(str(look_for) + " is at index " + str(grades.index(look_for)))
+else:
+    # If not in the list, don't even try for index number.
+    print(str(look_for) + " isn't in the list.")
+# Create a list of strongs
+Names = ["Zara", "Lupe", "Hong", "Alberto", "jake", "Tylor"]
+# Create a list of numbers
+Numbers =  [14, 0, 56, -4, 99, 56, 11.23]
+# Sort the names list
+Names.sort()
+# Sort the numbers list
+Numbers.sort()
+# Show the results
+print(Names)
+print(Numbers)
+
+
