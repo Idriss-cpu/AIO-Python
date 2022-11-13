@@ -1,5 +1,4 @@
 # Working with lists & tuples.
-from tkinter.font import names
 
 
 students = ["Mark", "Amber", "Todd", "Anita", "Sandy"]
@@ -91,7 +90,7 @@ else:
 # Create a list of strongs
 Names = ["Zara", "Lupe", "Hong", "Alberto", "jake", "Tylor"]
 # Create a list of numbers
-Numbers =  [14, 0, 56, -4, 99, 56, 11.23]
+Numbers = [14, 0, 56, -4, 99, 56, 11.23]
 # Sort the names list
 Names.sort()
 # Sort the numbers list
@@ -99,5 +98,3 @@ Numbers.sort()
 # Show the results
 print(Names)
 print(Numbers)
-
-
